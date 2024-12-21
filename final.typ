@@ -231,7 +231,7 @@ The formulas do not make sense in the context of the problem.
 #raw(text, lang: "python", block: true)
 
 Similar to the bruteforce solution, this code is ridiculous and fails everything.
-Unlike bruteforce, there is an attempt to detect an impossible circle, but it has an unnecessary check ```a==b``` and ```diff``` should be multiplied by $2$.
+Unlike bruteforce, there is an attempt to detect an impossible circle, but it has an unnecessary check ```\a==b``` and ```diff``` should be multiplied by $2$.
 
 === Rubric
 
@@ -424,7 +424,7 @@ Even I couldn't...
 
 Although outside the scope of this assignment, we tried ChatGPT-o1 to find an optimal solution for each problem.
 We found out that o1 successfully solved every problem, except for the last one.
-The sources of this project are available #link()[here] on GitHub.
+The sources of this project are available #link("https://github.com/tyaitskyi/seminar-ai-cp")[here] on GitHub.
 Funnily, o1 fails IO as well and does not know how to use ```stdio```.
 
 == Conclusion
