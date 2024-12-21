@@ -1,0 +1,66 @@
+Conversation
+########################
+conversationId: 670525d8-41f9-45b7-bf52-0dfddb0a21d0
+endpoint: LiteLLM
+title: Claude CP
+exportAt: 04:01:28 GMT-0500 (Eastern Standard Time)
+
+Options
+########################
+presetId: null
+model: llama3-1-70b
+chatGptLabel: Claude 3.5 Sonnet
+resendFiles: true
+iconURL: https://static.sandbox.ai.huit.harvard.edu/img/anthropic.png
+greeting: Hello! I'm Claude 3.5 Sonnet, running in the Harvard AI Sandbox. How can I help you today?
+spec: claude-3.5-sonnet
+promptPrefix: null
+temperature: 1
+top_p: 1
+presence_penalty: 0
+frequency_penalty: 0
+imageDetail: auto
+stop: undefined
+maxContextTokens: undefined
+max_tokens: undefined
+endpoint: LiteLLM
+endpointType: custom
+title: Claude CP
+
+History
+########################
+>> Claude 3.5 Sonnet:
+Here is a Python solution that uses a more optimal approach to solve the problem:
+```python
+import math
+
+t = int(input())
+for _ in range(t):
+    a, b, c = map(int, input().split())
+    diff = b - a
+    if diff < 0:
+        diff = -diff
+    n = 2 * diff
+    while n % diff != 0:
+        n += 2 * diff
+    d = c + diff
+    if d % n == 0 and d > 0 and d <= n:
+        print(d)
+    else:
+        print(-1)
+```
+Here's how it works:
+
+1. We read the number of test cases `t` and iterate over each test case.
+2. For each test case, we read the values of `a`, `b`, and `c`.
+3. We calculate the absolute difference between `b` and `a` and store it in `diff`.
+4. We calculate the smallest possible `n` is `2 * diff`, since the number of people is even.
+5. We increment `n` by `2 * diff` until `n` is a multiple of `diff`. This is because the difference between `b` and `a` must be a multiple of the total number of people.
+6. We calculate the value of `d` by adding `diff` to `c`.
+7. We check if `d` is a multiple of `n`, is positive, and is less than or equal to `n`. If all these conditions are true, we print `d`. Otherwise, we print -1.
+
+This solution has a time complexity of O(t), which is much faster than the brute-force approach. We use mathematical properties of the problem to reduce the search space and find the solution more efficiently.
+
+Note that this solution uses the fact that the difference between `b` and `a` must be a multiple of the total number of people. This allows us to find the smallest possible `n` that satisfies the conditions, which in turn allows us to find the value of `d`.
+
+
