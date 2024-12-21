@@ -425,12 +425,12 @@ Even I couldn't...
 Although outside the scope of this assignment, we tried ChatGPT-o1 to find an optimal solution for each problem.
 We found out that o1 successfully solved every problem, except for the last one.
 The sources of this project are available #link("https://github.com/tyaitskyi/seminar-ai-cp")[here] on GitHub.
-Funnily, o1 fails IO as well and does not know how to use ```stdio```.
+Funnily, o1 fails IO as well and does not know how to use stdio.
 
 == Conclusion
 
 All $3$ LLMs showed a strong performance on the problem set.
-ChatGPT is the smartest LLM with a score of $14$ in Idea, followed behind by more narrow-minded friends Claude () and Llama ().
+ChatGPT is the smartest LLM with a score of $14$ in Idea, followed behind by more narrow-minded friends Claude ($11$) and Llama ($9$).
 On the other hand, while Claude and Llama have a score of $16$ and $15$ in Style, ChatGPT ($8$) struggles behind with basic IO issues.
 Performance-wise, ChatGPT can sometimes neglect prompt requirements (problem 2), but does a better on the harder problems than Claude and Llama.
 In general, ChatGPT and Claude are relatively comparable, but Llama falls short with its terrible math skills (problem 2).
