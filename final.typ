@@ -391,7 +391,7 @@ This is a wrong bruteforce solution that attempts to use DP.
 
 Again, wrong solution, and not even optimal: the use of combinations on $n$ instantly yields an exponential $O$.
 Like Claude, Llama rejects Llema 1.
-Hence, since Llama has failed, we give it (or him/her?) a hint.
+Hence, since Llama has failed, we give it (or him/her? I feel like Llama is a rebellious teenage French girl) a hint.
 
 #let text = read("code/llama-hard-hint.py")
 #codly(header: [*Hint*], languages: codly-languages)
